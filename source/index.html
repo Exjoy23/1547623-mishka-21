@@ -19,8 +19,8 @@
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <div class="main-nav__wrapper container">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="">Каталог товаров</a></li>
-          <li class="site-list__item"><a href="">Вязание на заказ</a></li>
+          <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
         </ul>
         <div class="main-nav__list search">
           <a class="search__link" href="">Поиск по сайту</a>
@@ -77,7 +77,7 @@
         <img src="https://via.placeholder.com/260x315" width="260" height="315"
           alt="Три вязаные корзинки разных размеров, вложенные друг в друга. 2 из них в бирюзово-серых цветах, а третья розово-белая">
         <div class="featured__price">Цена:990 руб.</div>
-        <button class="featured__button button" type="button">Заказать</button>
+        <a class="featured__link button">Заказать</a>
       </div>
     </section>
 
@@ -106,29 +106,37 @@
         <h2 class="reviews__title title">Отзывы</h2>
         <ul class="reviews__list">
           <li class="reviews__item">
-            <p class="reviews__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
-              как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-              и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <p class="reviews__name">Анастасия Красильникова</p>
-            <p class="reviews__id">@misssssiskras</p>
+            <blockquote class="reviews__blockquote">
+              <p class="reviews__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
+                как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <footer class="reviews__footer">
+                <cite class="reviews__name">Анастасия Красильникова</cite>
+                <p class="reviews__id">@misssssiskras</p>
+              </footer>
+            </blockquote>
           </li>
           <li class="reviews__item">
-            <p class="reviews__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
-              как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-              и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <p class="reviews__name">Екатерина Красильникова</p>
-            <p class="reviews__id">@misssssiskras2</p>
+            <blockquote class="reviews__blockquote">
+              <p class="reviews__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
+                как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <footer class="reviews__footer">
+                <cite class="reviews__name">Екатерина Красильникова</cite>
+                <p class="reviews__id">@misssssiskras2</p>
+              </footer>
+            </blockquote>
           </li>
         </ul>
         <div class="reviews__toggles">
           <button class="reviews__toggle reviews__toggle--previous" type="button"
             aria-label="Предыдущий отзыв"></button>
           <button class="reviews__toggle reviews__toggle--next" type="button" aria-label="Следующий отзыв"></button>
-          <button class="reviews__button button" type="button">Написать</button>
+          <a class="reviews__link button">Написать</a>
         </div>
       </div>
     </section>
@@ -154,7 +162,7 @@
       </div>
       <img src="https://via.placeholder.com/320x454" width="320" height="454"
         alt="наш адрес: Большая Конюшенная 19/8, офис 101">
-      <button class="contacts__button button">Напишите нам</button>
+      <a class="contacts__link button">Напишите нам</a>
     </section>
   </main>
 
@@ -162,9 +170,9 @@
 
   <!--FOOTER-->
   <footer class="page-footer">
-    <div class="social">
-      <h2 class="visually-hidden">Наши социальные сети</h2>
-      <div class="social__wrapper container">
+    <div class="page-footer__wrapper container">
+      <div class="social">
+        <h2 class="visually-hidden">Наши социальные сети</h2>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="">
@@ -182,12 +190,12 @@
             </a>
           </li>
         </ul>
-        <div class="copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="">
-            <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="htmlacademy">
-          </a>
-        </div>
+      </div>
+      <div class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="htmlacademy">
+        </a>
       </div>
     </div>
   </footer>
