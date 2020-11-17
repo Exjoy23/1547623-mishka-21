@@ -1,0 +1,51 @@
+.reviews__wrapper {
+  margin-bottom: 92px;
+}
+
+.reviews__title {
+  margin-bottom: 12px;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.reviews__blockquote {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-bottom: 34px;
+
+  font-size: 15px;
+  line-height: 30px;
+  color: $secondary-color;
+}
+
+.reviews__name {
+  display: block;
+  margin-bottom: 7px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.reviews__id {
+  margin: 0;
+  margin-bottom: 32px;
+
+  font-size: 17px;
+}
+
+.reviews__toggle {
+  width: 127px;
+  height: 52px;
+  margin-bottom: 38px;
+
+  border: none;
+}
