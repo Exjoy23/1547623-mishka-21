@@ -1,0 +1,27 @@
+.about__wrapper {
+  margin-bottom: 55px;
+}
+
+.about__title {
+  margin-bottom: 80px;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.about__item {
+  width: 250px;
+  margin-bottom: 83px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.about__item:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,37 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 28px 0;
+  padding-left: 76px;
+
+  font-weight: 700;
+  font-size: 17px;
+  color: $primary-color;
+  text-decoration: none;
+
+  box-shadow: 0 1px 0 $box-shadow-menu-color, inset 0 1px 0 $box-shadow-menu-color;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -52px;
+  right: 0;
+
+  width: 21px;
+  height: 20px;
+
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21 1.366L19.566 0 10.55 8.585 1.434 0 0 1.366l9.015 8.683L0 18.634 1.434 20l9.117-8.585L19.566 20 21 18.634l-9.015-8.585L21 1.366z' fill='%23000'/%3E%3C/svg%3E");
+  border: none;
+  cursor: pointer;
+}

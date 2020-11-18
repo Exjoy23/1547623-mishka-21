@@ -1,0 +1,50 @@
+.featured__wrapper {
+  margin-bottom: 72px;
+}
+
+.featured__subtitle {
+  margin: 0;
+  margin-bottom: 18px;
+
+  font-weight: 700;
+  color: $categories-first-color;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.featured__description {
+  margin: 0;
+  margin-bottom: 24px;
+
+  font-size: 15px;
+  line-height: 24px;
+  color: $secondary-color;
+}
+
+.featured__table {
+  margin-bottom: 20px;
+}
+
+.featured__cell {
+  padding: 0;
+  padding-bottom: 17px;
+
+  color: $secondary-color;
+}
+
+.featured__cell:nth-child(2) {
+  padding-left: 20px;
+}
+
+.featured__img {
+  margin-bottom: 23px;
+}
+
+.featured__price {
+  margin-bottom: 24px;
+
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  color: $secondary-color;
+}
