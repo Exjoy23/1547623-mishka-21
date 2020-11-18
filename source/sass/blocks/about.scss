@@ -1,5 +1,31 @@
 .about__wrapper {
-  margin-bottom: 55px;
+  position: relative;
+
+  margin-bottom: 56px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: 0;
+
+    width: 320px;
+    height: 6px;
+
+    background-image: url("../img/zigzag.svg");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -685px;
+    left: 0;
+
+    width: 320px;
+    height: 6px;
+
+    background-image: url("../img/zigzag.svg");
+  }
 }
 
 .about__title {
@@ -14,12 +40,86 @@
 }
 
 .about__item {
+  position: relative;
+
   width: 250px;
   margin-bottom: 83px;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+
+  &--materials::before {
+    content: "";
+    position: absolute;
+    top: -55px;
+    left: 8px;
+
+    width: 33px;
+    height: 38px;
+
+    background-image: url("../img/icon-1.svg");
+  }
+
+  &--price::before {
+    content: "";
+    position: absolute;
+    top: -54px;
+    left: 0;
+
+    width: 47px;
+    height: 27px;
+
+    background-image: url("../img/icon-2.svg");
+  }
+
+  &--likes::before {
+    content: "";
+    position: absolute;
+    top: -48px;
+    left: 7px;
+
+    width: 34px;
+    height: 27px;
+
+    background-image: url("../img/icon-3.svg");
+  }
+
+  &--manually::before {
+    content: "";
+    position: absolute;
+    top: -51px;
+    left: 3px;
+
+    width: 35px;
+    height: 34px;
+
+    background-image: url("../img/icon-4.svg");
+  }
+
+  &--support::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -6px;
+
+    width: 55px;
+    height: 23px;
+
+    background-image: url("../img/icon-5.svg");
+  }
+
+  &--delivery::before {
+    content: "";
+    position: absolute;
+    top: -52px;
+    left: 3px;
+
+    width: 33px;
+    height: 32px;
+
+    background-image: url("../img/icon-6.svg");
+  }
 }
 
 .about__item:last-child {
