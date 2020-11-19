@@ -42,10 +42,30 @@
   font-size: 17px;
 }
 
+.reviews__toggles {
+  display: flex;
+}
+
 .reviews__toggle {
-  width: 127px;
+  box-sizing: border-box;
+  width: 130px;
   height: 52px;
   margin-bottom: 38px;
+  padding: 0;
 
-  border: none;
+  background-color: $white-color;
+  background-repeat: no-repeat;
+  background-position: 48% 50%;
+  border: 1px solid $table-border-color;
+  cursor: pointer;
+
+  &--previous {
+    background-image: url("../img/arrow-left.svg");
+    border-right: 0.5px solid $table-border-color;
+  }
+
+  &--next {
+    background-image: url("../img/arrow-right.svg");
+    border-left: 0.5px solid $table-border-color;
+  }
 }

@@ -1,0 +1,16 @@
+.search__link {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 32px;
+
+    width: 18px;
+    height: 18px;
+
+    background-image: url("../img/search.svg");
+    transform: translateY(-50%);
+  }
+}
