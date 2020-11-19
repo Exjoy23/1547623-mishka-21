@@ -154,6 +154,7 @@
   border-bottom: 2px solid $primary-color;
 
   &--phone {
+    padding-right: 45px;
     padding-bottom: 15px;
 
     background-image: url("../img/phone.svg");
@@ -162,6 +163,7 @@
   }
 
   &--email {
+    padding-right: 45px;
     padding-bottom: 14px;
 
     background-image: url("../img/mail.svg");
