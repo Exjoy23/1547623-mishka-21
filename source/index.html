@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,7 +21,7 @@
       <nav class="main-nav">
         <button class="main-nav__toggle visually-hidden" type="button" aria-label="открыть меню"></button>
         <button class="main-nav__toggle" type="button" aria-label="закрыть меню"></button>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--first">
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
         </ul>
@@ -47,9 +48,8 @@
       <div class="categories__wrapper">
         <h2 class="categories__title title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h2>
         <ul class="categories__list">
-          <li class="categories__item categories__item--interior"><a class="categories__link" href="">Предметы
-              интерьера</a></li>
-          <li class="categories__item categories__item--toy"><a class="categories__link" href="">Детские игрушки</a>
+          <li class="categories__item categories__item--interior"><a class="categories__link" href="">Предметы<br>интерьера</a></li>
+          <li class="categories__item categories__item--toy"><a class="categories__link" href="">Детские<br>игрушки</a>
           </li>
         </ul>
       </div>
@@ -60,8 +60,10 @@
     <!--featured-->
     <section class="featured">
       <div class="featured__wrapper container">
-        <h2 class="featured__title title">Вязаные корзинки</h2>
-        <p class="featured__subtitle">Товар недели</p>
+        <div class="featured__inner">
+          <h2 class="featured__title title">Вязаные корзинки</h2>
+          <p class="featured__subtitle">Товар недели</p>
+        </div>
         <p class="featured__description">Экологически чистая пряжа,
           ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="featured__table">
@@ -78,9 +80,9 @@
             <td class="featured__cell">15 см</td>
           </tr>
         </table>
-        <img class="featured__img" src="https://via.placeholder.com/260x315" width="260" height="315"
+        <img class="featured__img" src="https://via.placeholder.com/525x636"
           alt="Три вязаные корзинки разных размеров, вложенные друг в друга. 2 из них в бирюзово-серых цветах, а третья розово-белая">
-        <div class="featured__price">Цена: 990 руб.</div>
+        <p class="featured__price">Цена: 990 руб.</p>
         <a class="featured__link button" href="">Заказать</a>
       </div>
     </section>
@@ -97,7 +99,7 @@
           <li class="about__item about__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
           <li class="about__item about__item--manually">Связано вручную с&nbsp;любовью и умилением</li>
           <li class="about__item about__item--support">Поддержка отечественного производителя</li>
-          <li class="about__item about__item--delivery">Поставляется в&nbsp;подарочной упаковке</li>
+          <li class="about__item about__item--delivery">Поставляется в&nbsp;подарочной&nbsp;упаковке</li>
         </ul>
       </div>
     </section>
@@ -157,15 +159,16 @@
             <td class="contacts__cell"><a class="contacts__link"
                 href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
           </tr>
-          <tr class="contacts__row">
+          <tr class="contacts__row contacts__row--address">
             <td class="contacts__cell">адрес:</td>
             <td class="contacts__cell">
-              <address class="contacts__address">г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д. 19/8, офис 101</address>
+              <address class="contacts__address">г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис 101
+              </address>
             </td>
           </tr>
         </table>
       </div>
-      <img class="contacts__img" src="https://via.placeholder.com/320x454" width="320" height="454"
+      <img class="contacts__img" src="https://via.placeholder.com/320x454"
         alt="наш адрес: Большая Конюшенная 19/8, офис 101">
       <div class="container">
         <a class="contacts__button button" href="">Напишите нам</a>
@@ -178,6 +181,11 @@
   <!--FOOTER-->
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
+      <div class="page-footer__logo">
+        <a class="page-footer__link" href="">
+          <img src="img/logo-footer.svg" alt="логотип магазина Мишка">
+        </a>
+      </div>
       <div class="social">
         <h2 class="visually-hidden">Наши социальные сети</h2>
         <ul class="social__list">

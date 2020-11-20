@@ -1,13 +1,30 @@
+.page-header__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 1150px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    min-height: 89px;
+    padding: 0;
+
+    grid-template-columns: 1fr 398px;
+  }
+}
+
 .page-header__logo {
-  display: block;
   margin-bottom: 18px;
   padding-top: 14px;
   padding-right: 2px;
 
   text-align: center;
-}
 
-.page-header__wrapper {
-  width: 320px;
-  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    padding-left: 48px;
+  }
 }
