@@ -1,18 +1,40 @@
 .main-nav {
-  position: relative;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav__list {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  &--first {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 111px;
+      left: 50px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-nav__item {
+  @media (min-width: $tablet-width) {
+    width: 167px;
+  }
 }
 
 .main-nav__link {
   display: block;
   padding: 28px 0;
-  padding-left: 76px;
+  padding-left: 78px;
 
   font-weight: 700;
   font-size: 17px;
@@ -20,6 +42,14 @@
   text-decoration: none;
 
   box-shadow: 0 1px 0 $box-shadow-menu-color, inset 0 1px 0 $box-shadow-menu-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    font-size: 15px;
+
+    box-shadow: none;
+  }
 }
 
 .main-nav__toggle {

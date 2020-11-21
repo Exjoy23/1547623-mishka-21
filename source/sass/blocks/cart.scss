@@ -12,5 +12,16 @@
 
     background-image: url("../img/cart.svg");
     transform: translateY(-50%);
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    padding-left: 51px;
+
+    font-size: 17px;
   }
 }

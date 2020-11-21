@@ -1,5 +1,26 @@
 .page-footer {
+  box-sizing: border-box;
   padding-top: 28px;
 
   background-color: $background-footer-color;
+
+  @media (min-width: $tablet-width) {
+    min-height: 143px;
+    padding-top: 54px;
+  }
+}
+
+.page-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

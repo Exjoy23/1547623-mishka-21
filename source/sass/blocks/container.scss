@@ -1,7 +1,13 @@
 .container {
   box-sizing: border-box;
-  width: 320px;
+  min-width: 320px;
+  max-width: 1150px;
   margin: 0 auto;
   padding-right: 30px;
   padding-left: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
 }

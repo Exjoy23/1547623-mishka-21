@@ -1,21 +1,43 @@
 .categories__wrapper {
-  width: 320px;
+  box-sizing: border-box;
+  min-width: 320px;
   margin: 0 auto;
   margin-bottom: 30px;
 
+  background-color: $categories-background-color;
   background-image: url("../img/hero-mobile.png");
-  background-position: 0 -17.5px;
+  background-repeat: no-repeat;
+  background-position: 50% -15%;
+
+  @media (min-width: $tablet-width) {
+    min-height: 758px;
+    margin-bottom: 35px;
+
+    background-image: url("../img/hero-desktop.png");
+    background-position: 50% 0;
+    border-top: 1px solid rgba($primary-color, 0.1);
+  }
 }
 
 .categories__title {
   width: 260px;
+  margin: 0 auto;
   margin-bottom: 120px;
   padding-top: 72px;
-  padding-left: 30px;
 
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 700px;
+    margin-bottom: 372px;
+    padding-top: 155px;
+    padding-left: 0;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .categories__list {
@@ -23,34 +45,67 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+  }
 }
 
 .categories__item {
-  width: 320px;
+  display: flex;
+  min-width: 320px;
   height: 103px;
 
   &--interior {
     background-color: $categories-interior-color;
     background-image: url("../img/interior.svg");
     background-repeat: no-repeat;
-    background-position: 244px 24px;
+    background-position: 87% 57%;
+
+    @media (min-width: $tablet-width) {
+      background-position: 88% 67%;
+    }
   }
 
   &--toy {
     background-color: $categories-toy-color;
     background-image: url("../img/toy.svg");
     background-repeat: no-repeat;
-    background-position: 233px 22px;
+    background-position: 90% 51%;
+
+    @media (min-width: $tablet-width) {
+      background-position: 88% 67%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    max-width: 525px;
   }
 }
 
 .categories__link {
-  display: block;
-  padding: 24px 160px 32px 30px;
+  width: 100%;
+  padding-top: 24px;
+  padding-left: 30px;
 
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
   color: $white-color;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+    padding-left: 36px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.categories__text {
+  width: 130px;
 }
