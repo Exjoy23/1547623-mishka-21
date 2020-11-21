@@ -5,13 +5,19 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 32px;
+    right: 50%;
 
     width: 18px;
     height: 18px;
 
     background-image: url("../img/search.svg");
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(-67px);
+
+    @media (min-width: $tablet-width) {
+      right: 0;
+
+      transform: translateY(-50%) translateX(-30px);
+    }
   }
 
   @media (min-width: $tablet-width) {

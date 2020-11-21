@@ -33,8 +33,10 @@
 
 .main-nav__link {
   display: block;
+  margin-left: -85px;
   padding: 28px 0;
-  padding-left: 78px;
+  // padding-left: 78px;
+  padding-left: 50%;
 
   font-weight: 700;
   font-size: 17px;
@@ -43,7 +45,9 @@
 
   box-shadow: 0 1px 0 $box-shadow-menu-color, inset 0 1px 0 $box-shadow-menu-color;
 
+
   @media (min-width: $tablet-width) {
+    margin-left: 0;
     padding: 0;
 
     font-size: 15px;

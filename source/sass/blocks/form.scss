@@ -1,5 +1,6 @@
 .form__fieldset {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
 
   font-weight: 700;
@@ -7,24 +8,77 @@
 
   border: none;
 
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    padding-left: 168px;
+  }
+
   &--radio {
     margin-bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 4px;
+    }
   }
 
   &--checkbox {
     margin-bottom: 19px;
+
+
+    @media (min-width: $tablet-width) {
+      background-color: $background-footer-color;
+    }
   }
 
   &--field {
     margin-bottom: 31px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+      padding-top: 40px;
+    }
   }
 
   &--phone {
     margin-bottom: 31px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      padding-top: 50px;
+      padding-bottom: 25px;
+
+      background-color: $background-footer-color;
+    }
   }
 
   &--email {
     margin-bottom: 31px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 50px;
+
+      background-color: $background-footer-color;
+    }
+  }
+}
+
+.form__inner-checkbox {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    display: grid;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    column-gap: 35px;
+
+    grid-template-columns: 225px 225px;
+    row-gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 225px 225px 225px;
   }
 }
 
@@ -36,6 +90,12 @@
 
   color: $legend-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
   &--checkbox {
     margin-bottom: 10px;
@@ -63,18 +123,22 @@
     top: 50%;
     left: 60px;
 
-    width: 200px;
+    width: calc(100vw - 120px);
     height: 1px;
 
     background-color: $radio-color;
     transform: translateY(-50%);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
-}
 
-.form__legend--email::after {
-  left: 78px;
+  &--email::after {
+    left: 78px;
 
-  width: 182px;
+    width: calc(100vw - 138px);
+  }
 }
 
 .form__label {
@@ -82,6 +146,18 @@
   flex-direction: column;
 
   line-height: 18px;
+
+  &--name {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      margin-bottom: 37px;
+
+      font-size: 19px;
+      column-gap: 25px;
+
+      grid-template-columns: min-content 1fr;
+    }
+  }
 }
 
 .form__text-radio {
@@ -89,6 +165,13 @@
 
   margin-bottom: 24px;
   padding-left: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+    padding-left: 77px;
+
+    font-size: 19px;
+  }
 
   &::before {
     content: "";
@@ -103,11 +186,20 @@
     border: 2px solid $secondary-color;
     border-radius: 50%;
     transform: translateY(-50%);
+
+    @media (min-width: $tablet-width) {
+      width: 52px;
+      height: 52px;
+    }
   }
 }
 
 .form__input-radio:checked + .form__text-radio::before {
   box-shadow: inset 0 0 0 10px $white-color, inset 0 0 0 20px $radio-color;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: inset 0 0 0 13px $white-color, inset 0 0 0 25px $radio-color;
+  }
 }
 
 .form__text-checkbox {
@@ -115,6 +207,12 @@
 
   margin: 21.5px 0;
   padding-left: 61px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 80px;
+
+    font-size: 19px;
+  }
 
   &::before {
     content: "";
@@ -128,6 +226,11 @@
 
     border: 2px solid $secondary-color;
     transform: translateY(-50%);
+
+    @media (min-width: $tablet-width) {
+      width: 52px;
+      height: 52px;
+    }
   }
 }
 
@@ -140,6 +243,10 @@
 .form__text-field {
   margin-bottom: 14px;
   padding-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .form__input-field {
@@ -150,8 +257,17 @@
   font-size: 17px;
   font-family: inherit;
 
+  background-color: transparent;
   border: none;
   border-bottom: 2px solid $primary-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 10px;
+    padding-left: 18px;
+
+    font-size: 19px;
+  }
 
   &--phone {
     padding-right: 45px;
@@ -174,7 +290,7 @@
 
 .form__textarea {
   box-sizing: border-box;
-  width: 260px;
+  width: 100%;
   height: 142px;
   margin-bottom: 15px;
   padding: 16px;
@@ -194,10 +310,26 @@
 
   font-size: 14px;
   color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .form__button {
+  margin-right: auto;
   margin-bottom: 55px;
+  margin-left: auto;
 
   font-size: 17px;
+}
+
+.form__inner-contacts {
+  position: relative;
+}
+
+.form__inner-user {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
