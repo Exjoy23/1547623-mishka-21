@@ -1,7 +1,8 @@
 .form__fieldset {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 
   font-weight: 700;
   font-size: 17px;
@@ -11,7 +12,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
 
-    padding-left: 168px;
+    padding-left: 220px;
   }
 
   &--radio {
@@ -25,9 +26,21 @@
   &--checkbox {
     margin-bottom: 19px;
 
-
     @media (min-width: $tablet-width) {
-      background-color: $background-footer-color;
+      position: relative;
+
+      display: grid;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      column-gap: 35px;
+
+      grid-template-columns: 225px 225px;
+      row-gap: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 225px 225px 225px;
     }
   }
 
@@ -47,8 +60,6 @@
       margin-bottom: 0;
       padding-top: 50px;
       padding-bottom: 25px;
-
-      background-color: $background-footer-color;
     }
   }
 
@@ -57,28 +68,13 @@
 
     @media (min-width: $tablet-width) {
       padding-bottom: 50px;
-
-      background-color: $background-footer-color;
     }
   }
 }
 
 .form__inner-checkbox {
   @media (min-width: $tablet-width) {
-    position: relative;
-
-    display: grid;
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-    column-gap: 35px;
-
-    grid-template-columns: 225px 225px;
-    row-gap: 15px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 225px 225px 225px;
+    background-color: $background-footer-color;
   }
 }
 
@@ -325,7 +321,9 @@
 }
 
 .form__inner-contacts {
-  position: relative;
+  @media (min-width: $tablet-width) {
+    background-color: $background-footer-color;
+  }
 }
 
 .form__inner-user {

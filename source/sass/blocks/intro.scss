@@ -1,3 +1,9 @@
+.intro__wrapper {
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid rgba($primary-color, 0.1);
+  }
+}
+
 .intro__title {
   margin-bottom: 18px;
   padding-top: 69px;
