@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,7 +21,7 @@
       <nav class="main-nav">
         <button class="main-nav__toggle visually-hidden" type="button" aria-label="открыть меню"></button>
         <button class="main-nav__toggle" type="button" aria-label="закрыть меню"></button>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--first">
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
         </ul>
@@ -102,7 +103,7 @@
       <div class="content__wrapper">
         <h2 class="content__title title">Процесс производства</h2>
         <div class="content__inner">
-          <video class="content__video" poster="https://via.placeholder.com/258x150" width="258" height="150"></video>
+          <video class="content__video" poster="https://via.placeholder.com/666x455"></video>
         </div>
         <p class="content__text">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
@@ -117,6 +118,11 @@
   <!--FOOTER-->
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
+      <div class="page-footer__logo">
+        <a class="page-footer__link" href="">
+          <img src="img/logo-footer.svg" alt="логотип магазина Мишка">
+        </a>
+      </div>
       <div class="social">
         <h2 class="visually-hidden">Наши социальные сети</h2>
         <ul class="social__list">
