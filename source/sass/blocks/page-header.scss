@@ -6,6 +6,7 @@
   box-sizing: border-box;
   max-width: 1150px;
   margin: 0 auto;
+  padding-top: 8px;
 
   @media (min-width: $tablet-width) {
     display: grid;
