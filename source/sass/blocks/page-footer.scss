@@ -1,6 +1,6 @@
 .page-footer {
   box-sizing: border-box;
-  padding-top: 28px;
+  padding-top: 25px;
 
   background-color: $background-footer-color;
 
@@ -23,4 +23,12 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+}
+
+.page-footer__link:hover .page-footer__img {
+  fill: $contacts-link-color;
+}
+
+.page-footer__link:active .page-footer__img {
+  opacity: 0.3;
 }
