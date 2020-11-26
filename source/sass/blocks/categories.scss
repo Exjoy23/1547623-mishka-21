@@ -10,12 +10,16 @@
   background-position: 50% -15%;
 
   @media (min-width: $tablet-width) {
-    min-height: 758px;
+    min-height: 757px;
     margin-bottom: 35px;
 
     background-image: url("../img/hero-desktop.png");
     background-position: 50% 0;
     border-top: 1px solid rgba($primary-color, 0.1);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 112px;
   }
 }
 
@@ -31,12 +35,19 @@
 
   @media (min-width: $tablet-width) {
     width: 700px;
-    margin-bottom: 372px;
+    margin-bottom: 370px;
     padding-top: 155px;
     padding-left: 0;
 
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 354px;
+
+    font-size: 53px;
+    line-height: 58px;
   }
 }
 
@@ -47,9 +58,35 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+
     display: flex;
     justify-content: center;
     padding: 0 50px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: 107px;
+      left: 0;
+      z-index: 2;
+
+      width: 100%;
+      height: 24px;
+
+      background-image: url("data:image/svg+xml,%3Csvg width='768' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M749.784 0c-9.642 0-9.642 9.882-19.217 9.882S720.925 0 711.35 0c-9.574 0-9.641 9.882-19.216 9.882-9.642 0-9.642-9.882-19.284-9.882-9.641 0-9.641 9.882-19.216 9.882-9.642 0-9.642-9.882-19.217-9.882-9.641 0-9.641 9.882-19.216 9.882-9.575 0-9.843-9.882-19.418-9.882-9.641 0-9.641 9.882-19.216 9.882-9.575 0-9.709-9.882-19.284-9.882-9.641 0-9.641 9.882-19.216 9.882-9.642 0-9.642-9.882-19.284-9.882-9.641 0-9.641 9.882-19.216 9.882-9.642 0-9.642-9.882-19.217-9.882-9.574 0-9.708 9.882-19.35 9.882-9.642 0-9.642-9.882-19.217-9.882-9.641 0-9.641 9.882-19.216 9.882-9.642 0-9.642-9.882-19.284-9.882-9.641 0-9.641 9.882-19.216 9.882-9.642 0-9.642-9.882-19.217-9.882-9.641 0-9.641 9.882-19.216 9.882-9.642 0-9.642-9.882-19.217-9.882-9.641 0-9.641 9.882-19.283 9.882-9.642 0-9.642-9.882-19.284-9.882-9.641 0-9.641 9.882-19.283 9.882-9.642 0-9.642-9.882-19.284-9.882-9.641 0-9.641 9.882-19.283 9.882-9.642 0-9.642-9.882-19.283-9.882-9.642 0-9.642 9.882-19.284 9.882S181.791 0 172.15 0c-9.642 0-9.642 9.882-19.217 9.882-9.642 0-9.642-9.882-19.283-9.882-9.642 0-9.642 9.882-19.284 9.882S104.724 0 95.083 0C85.44 0 85.44 9.882 75.799 9.882S66.157 0 56.516 0C47.142 0 47.142 9.882 37.5 9.882 27.858 9.882 27.858 0 18.284 0 8.709 0 8.642 9.882-1 9.882V24h770V9.882c-9.642 0-9.642-9.882-19.216-9.882z' fill='%23fff'/%3E%3C/svg%3E");
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 102px;
+
+      height: 34px;
+
+      background-image: url("data:image/svg+xml,%3Csvg width='1250' height='34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1218.8 0c-15.65 0-15.65 14-31.19 14-15.54 0-15.65-14-31.2-14-15.54 0-15.65 14-31.19 14-15.65 0-15.65-14-31.31-14-15.65 0-15.65 14-31.19 14-15.65 0-15.65-14-31.2-14-15.65 0-15.65 14-31.19 14-15.547 0-15.982-14-31.526-14-15.652 0-15.652 14-31.195 14-15.544 0-15.761-14-31.305-14-15.652 0-15.652 14-31.195 14-15.653 0-15.653-14-31.305-14s-15.652 14-31.195 14c-15.653 0-15.652-14-31.196-14C765.87 0 765.652 14 750 14c-15.652 0-15.652-14-31.196-14-15.652 0-15.652 14-31.195 14-15.653 0-15.653-14-31.305-14s-15.652 14-31.195 14c-15.653 0-15.652-14-31.196-14-15.652 0-15.652 14-31.196 14-15.652 0-15.652-14-31.195-14-15.652 0-15.652 14-31.305 14-15.652 0-15.652-14-31.304-14s-15.652 14-31.304 14-15.652-14-31.305-14C390.652 0 390.652 14 375 14S359.348 0 343.696 0c-15.653 0-15.653 14-31.305 14S296.739 0 281.087 0s-15.652 14-31.196 14c-15.652 0-15.652-14-31.304-14s-15.652 14-31.304 14C171.63 14 171.63 0 155.978 0s-15.652 14-31.304 14S109.022 0 93.37 0C78.152 0 78.152 14 62.5 14 46.848 14 46.848 0 31.304 0 15.761 0 15.652 14 0 14v20h1250V14c-15.65 0-15.65-14-31.2-14z' fill='%23fff'/%3E%3C/svg%3E");
+      background-position: 75px 0;
+    }
   }
 }
 
@@ -58,25 +95,90 @@
   min-width: 320px;
   height: 103px;
 
-  &--interior {
-    background-color: $categories-interior-color;
-    background-image: url("../img/interior.svg");
-    background-repeat: no-repeat;
-    background-position: 87% 57%;
+  @media (min-width: $tablet-width) {
+    height: 119px;
+  }
 
-    @media (min-width: $tablet-width) {
-      background-position: 88% 67%;
+  &--interior {
+    position: relative;
+
+    background-color: $categories-interior-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      right: 36px;
+
+      width: 40px;
+      height: 62px;
+
+      background-image: url("../img/interior.svg");
+      opacity: 0.5;
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+      }
+    }
+
+    &:hover {
+      background-color: $categories-interior-hover-color;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      background-color: $categories-interior-hover-color;
+
+      &::after {
+        opacity: 0.3;
+      }
     }
   }
 
   &--toy {
-    background-color: $categories-toy-color;
-    background-image: url("../img/toy.svg");
-    background-repeat: no-repeat;
-    background-position: 90% 51%;
+    position: relative;
 
-    @media (min-width: $tablet-width) {
-      background-position: 88% 67%;
+    background-color: $categories-toy-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 27px;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/toy.svg");
+      opacity: 0.5;
+
+      @media (min-width: $tablet-width) {
+        top: 32px;
+        right: 33px;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: 35px;
+      }
+    }
+
+    &:hover {
+      background-color: $categories-toy-hover-color;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      background-color: $categories-toy-hover-color;
+
+      &::after {
+        opacity: 0.3;
+      }
     }
   }
 
@@ -98,7 +200,7 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    padding-top: 23px;
+    padding-top: 25px;
     padding-left: 36px;
 
     font-size: 20px;

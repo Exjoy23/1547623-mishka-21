@@ -7,24 +7,29 @@
   position: relative;
 
   padding-right: 27px;
-  padding-left: 39px;
 
   font-weight: 700;
   font-size: 19px;
 
-  @media (min-width: $tablet-width) {
-    padding-left: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -40px;
+
+    width: 260px;
+    height: 1px;
+
+    background-color: $border-footer-color;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
+}
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 52px;
-  //   left: 0;
-
-  //   width: 260px;
-  //   height: 1px;
-
-  //   background-color: $border-footer-color;
-  // }
+.copyright__link {
+  &:active {
+    opacity: 0.3;
+  }
 }

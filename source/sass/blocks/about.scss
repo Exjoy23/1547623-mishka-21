@@ -8,31 +8,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 175px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -35px;
-    left: 0;
-
-    width: 320px;
-    height: 6px;
-
-    background-image: url("../img/zigzag.svg");
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -685px;
-    left: 0;
-
-    width: 320px;
-    height: 6px;
-
-    background-image: url("../img/zigzag.svg");
+    margin-bottom: 89px;
+    padding-left: 225px;
   }
 }
 
@@ -41,6 +18,40 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 89px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -36px;
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background-image: url("../img/zigzag.svg");
+
+    @media (min-width: $tablet-width) {
+      top: -67px;
+
+      height: 17px;
+
+      background-image: url("../img/zigzag-line.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -82px;
+      left: 50px;
+
+      width: 1050px;
+      height: 23px;
+
+      background-image: url("../img/zigzag-line-desktop.svg");
+    }
   }
 }
 
@@ -56,13 +67,17 @@
     column-gap: 35px;
 
     grid-template-columns: 300px 300px;
+    row-gap: 111px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 50px;
   }
 }
 
 .about__item {
   position: relative;
 
-  width: 250px;
   margin-bottom: 83px;
 
   font-weight: 700;
@@ -71,7 +86,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 111px;
+    margin: 0;
 
     font-size: 20px;
     line-height: 22px;
@@ -86,7 +101,6 @@
 
     &--likes {
       order: 5;
-      margin-bottom: 0;
     }
 
     &--manually {
