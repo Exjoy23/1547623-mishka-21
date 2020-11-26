@@ -4,11 +4,11 @@
 
     column-gap: 31px;
 
-    grid-template-columns: 84px 285px;
+    grid-template-columns: 84px 283px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 82px 285px;
+    grid-template-columns: 1fr 82px 283px;
   }
 }
 

@@ -15,11 +15,15 @@
     padding-left: 220px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-left: 227px;
+  }
+
   &--radio {
     margin-bottom: 16px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
   }
 
@@ -30,16 +34,23 @@
       position: relative;
 
       display: grid;
-      padding-top: 50px;
-      padding-bottom: 50px;
+      margin-bottom: 22px;
+      margin-left: -3px;
+      padding-top: 46px;
+      padding-bottom: 46px;
 
-      column-gap: 35px;
+      column-gap: 36px;
 
       grid-template-columns: 225px 225px;
       row-gap: 15px;
     }
 
     @media (min-width: $desktop-width) {
+      margin-right: auto;
+      margin-left: auto;
+
+      column-gap: 38px;
+
       grid-template-columns: 225px 225px 225px;
     }
   }
@@ -48,8 +59,12 @@
     margin-bottom: 31px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 20px;
+      margin-bottom: 13px;
       padding-top: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 225px;
     }
   }
 
@@ -58,8 +73,12 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
-      padding-top: 50px;
-      padding-bottom: 25px;
+      padding-top: 60px;
+      padding-bottom: 34px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 225px;
     }
   }
 
@@ -67,7 +86,22 @@
     margin-bottom: 31px;
 
     @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
       padding-bottom: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 225px;
+    }
+  }
+
+  &--textarea {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 225px;
     }
   }
 }
@@ -89,8 +123,34 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -3px;
+    left: 50px;
+
+    &--checkbox {
+      top: 63px;
+      left: 53px;
+    }
+
+    &--name {
+      top: 42px;
+    }
+
+    &--phone {
+      top: 63px;
+    }
+
+    &--email {
+      top: 5px;
+    }
+
+    &--textarea {
+      top: 15px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 110px;
   }
 
   &--checkbox {
@@ -205,7 +265,7 @@
   padding-left: 61px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 80px;
+    padding-left: 82px;
 
     font-size: 19px;
   }
@@ -234,6 +294,11 @@
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/tick-big.svg");
+    background-position: 54% 54%;
+  }
 }
 
 .form__text-field {
@@ -241,7 +306,8 @@
   padding-top: 23px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    margin-left: -2px;
+    padding-top: 3px;
   }
 }
 
@@ -259,8 +325,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-bottom: 10px;
-    padding-left: 18px;
+    padding-bottom: 11px;
+    padding-left: 16px;
 
     font-size: 19px;
   }
@@ -272,6 +338,14 @@
     background-image: url("../img/phone.svg");
     background-repeat: no-repeat;
     background-position: 97% 0;
+
+    @media (min-width: $tablet-width) {
+      background-position: 94.5% 10%;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 99% 10%;
+    }
   }
 
   &--email {
@@ -281,6 +355,14 @@
     background-image: url("../img/mail.svg");
     background-repeat: no-repeat;
     background-position: 99% 11%;
+
+    @media (min-width: $tablet-width) {
+      background-position: 95.4% 23%;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 99.5% 30%;
+    }
   }
 }
 
@@ -298,6 +380,16 @@
   border: 2px solid $primary-color;
 
   resize: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -3px;
+
+    font-size: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13px;
+  }
 }
 
 .form__text-note {
@@ -309,6 +401,8 @@
 
   @media (min-width: $tablet-width) {
     order: 2;
+
+    font-size: 17px;
   }
 }
 
@@ -318,6 +412,11 @@
   margin-left: auto;
 
   font-size: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    margin: 0;
+  }
 }
 
 .form__inner-contacts {
@@ -329,5 +428,12 @@
 .form__inner-user {
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
   }
 }

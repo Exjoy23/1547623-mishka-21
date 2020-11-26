@@ -16,6 +16,8 @@
   border: 2px solid $secondary-color;
   cursor: pointer;
 
+  transition-duration: 0.5s;
+
   &:hover {
     color: $white-color;
 
