@@ -95,8 +95,15 @@
   min-width: 320px;
   height: 103px;
 
+
   @media (min-width: $tablet-width) {
     height: 119px;
+
+    &:hover {
+      height: 124px;
+      margin-top: -5px;
+      padding-top: 5px;
+    }
   }
 
   &--interior {
@@ -126,6 +133,10 @@
 
       &::after {
         opacity: 1;
+
+        @media (min-width: $tablet-width) {
+          top: 35px;
+        }
       }
     }
 
@@ -170,6 +181,10 @@
 
       &::after {
         opacity: 1;
+
+        @media (min-width: $tablet-width) {
+          top: 37px;
+        }
       }
     }
 

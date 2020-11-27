@@ -1,0 +1,127 @@
+.modal {
+  display: none;
+}
+
+.modal--background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+
+  background-color: rgba($background-color, 0.9);
+}
+
+.modal--active {
+  display: block;
+}
+
+.modal__wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 30px;
+  padding-top: 29px;
+
+  background-color: $background-color;
+  border: 1px solid $border-modal-color;
+  transform: translateX(-50%) translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    width: 570px;
+    height: 336px;
+    padding-top: 52px;
+    padding-right: 106px;
+    padding-left: 108px;
+  }
+}
+
+.modal__title {
+  width: 260px;
+  margin: 0;
+  margin-bottom: 19px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin-bottom: 27px;
+
+    font-size: 30px;
+  }
+}
+
+.modal__subtitle {
+  margin: 0;
+  margin-bottom: 26px;
+
+  font-size: 15px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+
+    font-size: 17px;
+  }
+}
+
+.modal__inner {
+  display: grid;
+  margin-bottom: 31px;
+
+  column-gap: 7px;
+
+  grid-template-columns: 82px 82px 82px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 112px 112px 112px;
+  }
+}
+
+.modal__text {
+  display: block;
+  box-sizing: border-box;
+  width: 82px;
+  height: 52px;
+  padding-top: 13px;
+
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  text-transform: uppercase;
+
+  border: 2px solid rgba($secondary-color, 0.1);
+
+  &:hover {
+    border: 2px solid rgba($secondary-color, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
+}
+
+.modal__radio:checked + .modal__text {
+  border: 2px solid $border-modal-active-color;
+}
+
+.modal__button {
+  font-size: 17px;
+  color: $white-color;
+
+  background-color: $border-modal-active-color;
+  border: 2px solid $border-modal-active-color;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
+}
