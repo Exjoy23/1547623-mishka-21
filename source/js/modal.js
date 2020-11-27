@@ -1,12 +1,14 @@
 "use strict";
 
-const buttonOpenModal = document.querySelector('.featured__link');
+const buttonOpenModal = document.querySelectorAll('.open-modal');
 const modal = document.querySelector('.modal');
 const buttonAdd = modal.querySelector('.modal__button');
 
-buttonOpenModal.addEventListener('click', (evt) => {
-  evt.preventDefault();
-  modal.classList.add('modal--active');
+buttonOpenModal.forEach(item => {
+  item.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    modal.classList.add('modal--active');
+  });
 });
 
 buttonAdd.addEventListener('click', (evt) => {
