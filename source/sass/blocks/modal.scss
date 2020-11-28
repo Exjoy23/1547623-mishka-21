@@ -124,4 +124,8 @@
   @media (min-width: $tablet-width) {
     width: 350px;
   }
+
+  &:hover {
+    border-color: $secondary-color;
+  }
 }
