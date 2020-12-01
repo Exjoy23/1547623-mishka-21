@@ -33,3 +33,7 @@
     opacity: 0.3;
   }
 }
+
+.copyright__link:hover .copyright__img {
+  fill: $contacts-link-color;
+}

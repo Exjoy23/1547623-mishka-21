@@ -8,20 +8,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 82px 283px;
-  }
-}
+    column-gap: 33px;
 
-.main-nav--open {
-  position: absolute;
-  top: 79px;
-  right: 0;
-  left: 0;
-
-  background-color: $background-color;
-
-  @media (min-width: $tablet-width) {
-    position: static;
+    grid-template-columns: 1fr 84px 283px;
   }
 }
 
@@ -55,7 +44,7 @@
 
 .main-nav--open .main-nav__toggle {
   position: absolute;
-  top: -60px;
+  top: 19px;
   right: 20px;
 
   width: 21px;
