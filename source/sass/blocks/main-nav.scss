@@ -14,6 +14,24 @@
   }
 }
 
+.main-nav--open {
+  animation-name: show;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes show {
+  from {
+    height: 0;
+    overflow: hidden;
+  }
+
+  to {
+    height: 316px;
+    overflow: hidden;
+  }
+}
+
 .main-nav--closed .main-nav__list {
   display: none;
 
