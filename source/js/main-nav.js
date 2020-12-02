@@ -9,5 +9,4 @@ buttonMenu.addEventListener('click', (evt) => {
   evt.preventDefault();
   nav.classList.toggle('main-nav--open');
   nav.classList.toggle('main-nav--closed');
-
 });
