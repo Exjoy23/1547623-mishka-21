@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const nav = document.querySelector('.main-nav');
 const buttonMenu = nav.querySelector('.main-nav__toggle');

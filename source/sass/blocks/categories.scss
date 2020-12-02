@@ -1,32 +1,45 @@
 .categories__wrapper {
+  display: grid;
   box-sizing: border-box;
   min-width: 320px;
+  min-height: 488px;
   margin: 0 auto;
   margin-bottom: 30px;
 
   background-color: $categories-background-color;
-  background-image: url("../img/hero-mobile.png");
+  background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% -15%;
 
-  @media (min-width: $tablet-width) {
-    min-height: 757px;
-    margin-bottom: 35px;
+  grid-template-rows: 1fr min-content;
 
-    background-image: url("../img/hero-desktop.png");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 320px 373px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 745px;
+    margin-bottom: 47px;
+
+    background-image: url("../img/hero-desktop.jpg");
     background-position: 50% 0;
     border-top: 1px solid rgba($primary-color, 0.1);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 768px 746px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 112px;
+    margin-bottom: 124px;
   }
 }
 
 .categories__title {
-  width: 260px;
+  max-width: 260px;
   margin: 0 auto;
-  margin-bottom: 120px;
   padding-top: 72px;
 
   font-size: 27px;
@@ -34,17 +47,15 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 700px;
-    margin-bottom: 370px;
+    max-width: 708px;
     padding-top: 155px;
-    padding-left: 0;
 
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 354px;
+    max-width: 1050px;
 
     font-size: 53px;
     line-height: 58px;
@@ -102,7 +113,6 @@
     &:hover {
       height: 124px;
       margin-top: -5px;
-      padding-top: 5px;
     }
   }
 
@@ -133,10 +143,6 @@
 
       &::after {
         opacity: 1;
-
-        @media (min-width: $tablet-width) {
-          top: 35px;
-        }
       }
     }
 
@@ -181,10 +187,6 @@
 
       &::after {
         opacity: 1;
-
-        @media (min-width: $tablet-width) {
-          top: 37px;
-        }
       }
     }
 

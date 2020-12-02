@@ -7,8 +7,13 @@
     min-height: 457px;
     margin-bottom: 149px;
 
-    background-image: url("../img/review.png");
+    background-image: url("../img/review.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px 457px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -38,6 +43,14 @@
   padding: 0;
 
   list-style: none;
+}
+
+.reviews__item {
+  display: none;
+}
+
+.reviews__item--active {
+  display: block;
 }
 
 .reviews__blockquote {

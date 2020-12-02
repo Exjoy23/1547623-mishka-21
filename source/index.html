@@ -15,8 +15,13 @@
   <!--HEADER-->
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="">
-        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="логотип магазина Мишка">
+      <a class="page-header__logo page-header__logo--index">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+          <img class="page-header__img" src="img/mishka-logo-mobile.svg" width="86" height="35"
+            alt="логотип магазина Мишка">
+        </picture>
       </a>
       <ul class="page-header__list">
         <li class="page-header__item"><a class="page-header__link" href="">Новые поступления</a></li>
@@ -52,7 +57,7 @@
     <!--categories-->
     <section class="categories">
       <div class="categories__wrapper">
-        <h2 class="categories__title title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h2>
+        <h2 class="categories__title title">Милые штуки ручной<br>работы для дома</h2>
         <ul class="categories__list">
           <li class="categories__item categories__item--interior"><a class="categories__link"
               href="">Предметы<br>интерьера</a></li>
@@ -87,8 +92,12 @@
             <td class="featured__cell">15 см</td>
           </tr>
         </table>
-        <img class="featured__img" src="https://via.placeholder.com/525x636"
-          alt="Три вязаные корзинки разных размеров, вложенные друг в друга. 2 из них в бирюзово-серых цветах, а третья розово-белая">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="featured__img" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+            alt="Три вязаные корзинки разных размеров, вложенные друг в друга. 2 из них в бирюзово-серых цветах, а третья розово-белая">
+        </picture>
         <p class="featured__price">Цена: 990 руб.</p>
         <a class="featured__link button open-modal" href="">Заказать</a>
       </div>
@@ -101,12 +110,12 @@
       <div class="about__wrapper container">
         <h2 class="about__title title">Коротко о нас:</h2>
         <ul class="about__list">
-          <li class="about__item about__item--materials">Экологически чистые&nbsp;материалы</li>
-          <li class="about__item about__item--price">Скандинавский стиль по&nbsp;российской цене</li>
-          <li class="about__item about__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
-          <li class="about__item about__item--manually">Связано вручную с&nbsp;любовью&nbsp;и умилением</li>
-          <li class="about__item about__item--support">Поддержка отечественного производителя</li>
-          <li class="about__item about__item--delivery">Поставляется в&nbsp;подарочной&nbsp;упаковке</li>
+          <li class="about__item about__item--materials">Экологически<br>чистые материалы</li>
+          <li class="about__item about__item--price">Скандинавский стиль<br>по&nbsp;российской цене</li>
+          <li class="about__item about__item--likes">Увеличивает лайки<br>на&nbsp;фотографиях</li>
+          <li class="about__item about__item--manually">Связано вручную<br>с&nbsp;любовью и умилением</li>
+          <li class="about__item about__item--support">Поддержка отечественного<br>производителя</li>
+          <li class="about__item about__item--delivery">Поставляется<br>в&nbsp;подарочной упаковке</li>
         </ul>
       </div>
     </section>
@@ -118,12 +127,12 @@
       <div class="reviews__wrapper container">
         <h2 class="reviews__title title">Отзывы</h2>
         <ul class="reviews__list">
-          <li class="reviews__item">
+          <li class="reviews__item reviews__item--active">
             <blockquote class="reviews__blockquote">
               <p class="reviews__text">
-                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
-                как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!
+                Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества
+                лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек
+                в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!
               </p>
               <footer class="reviews__footer">
                 <cite class="reviews__name">Анастасия Красильникова</cite>
@@ -131,16 +140,31 @@
               </footer>
             </blockquote>
           </li>
-          <li class="reviews__item visually-hidden">
+          <li class="reviews__item">
             <blockquote class="reviews__blockquote">
               <p class="reviews__text">
-                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
-                как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+                Я&nbsp;сестра молодой мамы, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого
+                количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров
+                и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают
+                больше лайков!
               </p>
               <footer class="reviews__footer">
                 <cite class="reviews__name">Екатерина Красильникова</cite>
                 <p class="reviews__id">@misssssiskras2</p>
+              </footer>
+            </blockquote>
+          </li>
+          <li class="reviews__item">
+            <blockquote class="reviews__blockquote">
+              <p class="reviews__text">
+                Я&nbsp;двоюродная сестра молодой мамы, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко
+                такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила
+                аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также
+                набирают больше лайков!
+              </p>
+              <footer class="reviews__footer">
+                <cite class="reviews__name">Елена Красильникова</cite>
+                <p class="reviews__id">@misssssiskras3</p>
               </footer>
             </blockquote>
           </li>
@@ -226,8 +250,11 @@
       </div>
       <div class="copyright">
         <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy">
+          <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="copyright__img"
+              d="M13.65 0h-.1L0 1.396v24.627L13.55 34 27 26.023V1.396L13.65 0zm11.443 12.065L13.55 5.285v-.1h-.1l-.1-.1v.1l-11.443 6.88V3.09L13.45 1.894l11.643 1.197v8.974zM13.45 6.78l11.543 6.68-4.517 2.593-7.127-4.188v1.396l5.922 3.49-.903.498-5.019-2.99v1.395l3.815 2.293-.803.499-3.012-1.795v1.396l1.908 1.097-1.807 1.097-11.443-6.68L13.45 6.78zM1.907 15.056l11.442 6.78v.997L5.42 18.147v1.396l8.03 4.785v1.097L5.42 20.74v1.396l8.03 4.786 8.13-4.886V16.85l3.413-1.994v9.971l-11.543 6.88-11.543-6.78v-9.871z"
+              fill="#63D1BB" /></svg>
         </a>
       </div>
     </div>
@@ -257,6 +284,7 @@
 
   <script src="js/main-nav.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/reviews.js"></script>
 </body>
 
 </html>

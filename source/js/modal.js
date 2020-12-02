@@ -1,29 +1,39 @@
-"use strict";
+'use strict';
 
 const buttonOpenModal = document.querySelectorAll('.open-modal');
 const modal = document.querySelector('.modal');
 const buttonAdd = modal.querySelector('.modal__button');
 
+function openModal() {
+  modal.classList.add('modal--active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modal.classList.remove('modal--active');
+  document.body.style.overflow = '';
+}
+
 buttonOpenModal.forEach(item => {
   item.addEventListener('click', (evt) => {
     evt.preventDefault();
-    modal.classList.add('modal--active');
+    openModal();
   });
 });
 
 buttonAdd.addEventListener('click', (evt) => {
   evt.preventDefault();
-  modal.classList.remove('modal--active');
+  closeModal();
 });
 
 modal.addEventListener('click', (evt) => {
   if (evt.target.classList.contains('modal')) {
-    modal.classList.remove('modal--active');
+    closeModal();
   }
 });
 
 document.addEventListener('keydown', (evt) => {
   if (evt.key == 'Escape') {
-    modal.classList.remove('modal--active');
+    closeModal();
   }
 });
