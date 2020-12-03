@@ -6,11 +6,17 @@ const buttonAdd = modal.querySelector('.modal__button');
 
 function openModal() {
   modal.classList.add('modal--active');
+  modal.classList.add('modal--show');
   document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
-  modal.classList.remove('modal--active');
+  modal.classList.add('modal--hide');
+  setTimeout(() => {
+    modal.classList.remove('modal--active');
+    modal.classList.remove('modal--show');
+    modal.classList.remove('modal--hide');
+  }, 1000);
   document.body.style.overflow = '';
 }
 

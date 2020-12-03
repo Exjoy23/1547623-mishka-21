@@ -16,7 +16,12 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
-        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="логотип магазина Мишка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+          <img class="page-header__img" src="img/mishka-logo-mobile.svg" width="86" height="35"
+            alt="логотип магазина Мишка">
+        </picture>
       </a>
       <ul class="page-header__list">
         <li class="page-header__item"><a class="page-header__link" href="">Новые поступления</a></li>
@@ -57,8 +62,14 @@
       <div class="goods__wrapper container">
         <ul class="goods__list">
           <li class="goods__item">
-            <a class="goods__img-link" href=""><img class="goods__img" src="https://via.placeholder.com/260x195"
-                width="260" height="195" alt="белый вязаный заяц в бирюзовой пижаме"></a>
+            <a class="goods__img-link" href="">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img class="goods__img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="260"
+                  height="195" alt="белый вязаный заяц в бирюзовой пижаме">
+              </picture>
+            </a>
             <div class="goods__inner">
               <a class="goods__title-link" href="">
                 <h2 class="goods__title title">Зайчик-попрыгайчик</h2>
@@ -71,8 +82,14 @@
             </div>
           </li>
           <li class="goods__item">
-            <a class="goods__img-link" href=""><img class="goods__img" src="https://via.placeholder.com/260x195"
-                width="260" height="195" alt="белый вязаный заяц в бирюзовой пижаме"></a>
+            <a class="goods__img-link" href="">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img class="goods__img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="260"
+                  height="195" alt="розово-белая вязяная корзинка с бельем внутри">
+              </picture>
+            </a>
             <div class="goods__inner">
               <a class="goods__title-link" href="">
                 <h2 class="goods__title title">Корзинка для белья</h2>
@@ -80,13 +97,19 @@
               <p class="goods__description">Диаметр 15 см, высота 10 см</p>
               <div class="goods__row">
                 <p class="goods__price">690 руб.</p>
-                <a class="goods__link open-modal" href="" aria-label="добавить зайчика-попрыгайчика в корзину"></a>
+                <a class="goods__link open-modal" href="" aria-label="добавить корзинку для белья в корзину"></a>
               </div>
             </div>
           </li>
           <li class="goods__item">
-            <a class="goods__img-link" href=""><img class="goods__img" src="https://via.placeholder.com/260x195"
-                width="260" height="195" alt="белый вязаный заяц в бирюзовой пижаме"></a>
+            <a class="goods__img-link" href="">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img class="goods__img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="260"
+                  height="195" alt="зелено-белая вязяная корзинка с мягкими игрушками внутри">
+              </picture>
+            </a>
             <div class="goods__inner">
               <a class="goods__title-link" href="">
                 <h2 class="goods__title title">Большая корзинка для&nbsp;игрушек</h2>
@@ -94,7 +117,8 @@
               <p class="goods__description">Диаметр 30 см, высота 30 см</p>
               <div class="goods__row">
                 <p class="goods__price">1 500 руб.</p>
-                <a class="goods__link open-modal" href="" aria-label="добавить зайчика-попрыгайчика в корзину"></a>
+                <a class="goods__link open-modal" href=""
+                  aria-label="добавить большую корзинку для игрушек в корзину"></a>
               </div>
             </div>
           </li>
@@ -109,7 +133,7 @@
       <div class="content__wrapper">
         <h2 class="content__title title">Процесс производства</h2>
         <div class="content__inner">
-          <video class="content__video" poster="https://via.placeholder.com/682x455"></video>
+          <video class="content__video"></video>
           <button class="content__button"></button>
         </div>
         <p class="content__text">

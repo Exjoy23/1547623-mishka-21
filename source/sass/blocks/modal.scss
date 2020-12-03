@@ -17,6 +17,54 @@
   display: block;
 }
 
+.modal--show {
+  animation-name: modal-show;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+.modal--hide {
+  animation-name: modal-hide;
+  animation-duration: 1.1s;
+  animation-timing-function: linear;
+}
+
+@keyframes modal-show {
+  0% {
+    background-color: transparent;
+    transform: translateY(-70%);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(-10%);
+  }
+
+  80% {
+    background-color: transparent;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    background-color: rgba($background-color, 0.9);
+  }
+}
+
+@keyframes modal-hide {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 .modal__wrapper {
   position: fixed;
   top: 50%;

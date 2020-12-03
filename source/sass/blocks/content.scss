@@ -103,20 +103,46 @@
     border-bottom: none;
   }
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   z-index: 2;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
 
-  //   width: 100px;
-  //   height: 77px;
+    width: 260px;
+    height: 150px;
 
-  //   background-image: url("../img/play.svg");
-  //   transform: translateY(-50%) translateX(-50%);
-  //   cursor: pointer;
-  // }
+    background-image: url("../img/video-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-mobile@2x.jpg");
+      background-size: 260px 150px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 668px;
+      height: 455px;
+
+      background-image: url("../img/video-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/video-tablet@2x.jpg");
+        background-size: 668px 455px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 682px;
+      height: 455px;
+
+      background-image: url("../img/video-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/video-desktop@2x.jpg");
+        background-size: 682px 455px;
+      }
+    }
+  }
 }
 
 .content__video {
