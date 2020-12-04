@@ -34,6 +34,10 @@
   }
 }
 
+.copyright__img {
+  fill: $legend-color;
+}
+
 .copyright__link:hover .copyright__img {
   fill: $contacts-link-color;
 }
