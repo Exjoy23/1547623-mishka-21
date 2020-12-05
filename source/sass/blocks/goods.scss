@@ -55,6 +55,10 @@
 }
 
 .goods__img {
+  display: block;
+
+  background-color: $secondary-color;
+
   @media (min-width: $tablet-width) {
     width: 334px;
     height: 334px;
