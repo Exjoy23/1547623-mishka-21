@@ -367,6 +367,7 @@
     background-image: url("../img/phone.svg");
     background-repeat: no-repeat;
     background-position: 97% 0;
+    filter: grayscale(1);
 
     @media (min-width: $tablet-width) {
       background-position: 94.5% 10%;
@@ -378,7 +379,7 @@
 
     &:hover,
     &:focus {
-      background-image: url("data:image/svg+xml,%3Csvg width='25' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.44 24h-1.11c-4.939-.593-8.568-2.864-11.189-5.728C2.521 15.408.403 11.753 0 6.716V5.333c.1-.888.504-1.481 1.109-2.074.605-.69 1.613-1.481 2.52-1.58.706 0 1.815.494 2.218 1.087.403.493.605 1.58.806 2.37.202.889.605 1.975.504 2.765-.201 1.186-1.814 1.68-2.217 2.568 1.612 3.655 4.133 6.42 7.56 8.198.806-.494 1.613-1.877 2.823-1.877.403 0 1.008.198 1.41.297.505.098.908.296 1.311.493.706.297 2.017.593 2.42 1.186.403.592.705 1.58.605 2.172-.303 1.284-2.42 2.667-3.63 3.062zM12.6 1.481c5.948 0 10.888 4.741 10.888 10.667H25C25 5.432 19.456 0 12.6 0v1.481z' fill='%2362D1BA'/%3E%3Cpath d='M12.6 9.185v1.58c.807 0 1.412.593 1.412 1.383h1.613c0-1.58-1.31-2.963-3.024-2.963zM12.6 6.124c3.327 0 6.15 2.666 6.15 6.024h1.613c0-4.148-3.427-7.506-7.661-7.506v1.482H12.6z' fill='%2362D1BA'/%3E%3C/svg%3E");
+      filter: none;
     }
   }
 
@@ -389,6 +390,7 @@
     background-image: url("../img/mail.svg");
     background-repeat: no-repeat;
     background-position: 99% 11%;
+    filter: grayscale(1);
 
     @media (min-width: $tablet-width) {
       background-position: 95.4% 23%;
@@ -400,7 +402,7 @@
 
     &:hover,
     &:focus {
-      background-image: url("data:image/svg+xml,%3Csvg width='32' height='21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='1' d='M28 0H4C1.8 0 0 1.8 0 4v13c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4zM2 5.3l7 5.3-7 5.3V5.3zM30 17c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2l7.8-5.9 4.4 3.3c.5.4 1.2.6 1.8.6.6 0 1.3-.2 1.8-.6l4.4-3.3L30 17zm0-1.2l-7-5.3 7-5.3v10.6zm-12.8-2.2c-.4.3-.8.4-1.2.4-.4 0-.9-.1-1.2-.4l-4.1-3.1-.8-.6L2 4c0-1.1.9-2 2-2h24c1.1 0 2 .9 2 2l-12.8 9.6z' fill='%2362D1BA'/%3E%3C/svg%3E");
+      filter: none;
     }
   }
 
