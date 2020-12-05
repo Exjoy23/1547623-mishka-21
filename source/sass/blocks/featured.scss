@@ -141,6 +141,8 @@
   margin-bottom: 27px;
   margin-left: auto;
 
+  background-color: $secondary-color;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 103px;
