@@ -13,7 +13,7 @@ function openModal() {
 function closeModal() {
   modal.classList.add("modal--hide");
   setTimeout(() => {
-    modal.classList.remove("modal--active", "modal--show", "modal--hide", "page__body--modal");
+    modal.classList.remove("modal--active", "modal--show", "modal--hide");
     body.classList.remove("page__body--modal");
   }, 1500);
 }
