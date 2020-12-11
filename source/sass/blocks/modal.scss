@@ -19,14 +19,14 @@
 
 .modal--show {
   animation-name: modal-show;
-  animation-duration: 1s;
-  animation-timing-function: ease-in;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
 }
 
 .modal--hide {
   animation-name: modal-hide;
-  animation-duration: 1.1s;
-  animation-timing-function: linear;
+  animation-duration: 1.6s;
+  animation-timing-function: ease-in;
 }
 
 @keyframes modal-show {
@@ -36,15 +36,7 @@
     opacity: 0;
   }
 
-  60% {
-    transform: translateY(0);
-  }
-
-  70% {
-    transform: translateY(-10%);
-  }
-
-  80% {
+  50% {
     background-color: transparent;
     transform: translateY(0);
     opacity: 1;
@@ -56,11 +48,19 @@
 }
 
 @keyframes modal-hide {
-  from {
+  0% {
+    background-color: rgba($background-color, 0.9);
+  }
+
+  50% {
+    background-color: transparent;
+    transform: translateY(0);
     opacity: 1;
   }
 
-  to {
+  100% {
+    background-color: transparent;
+    transform: translateY(-90%);
     opacity: 0;
   }
 }

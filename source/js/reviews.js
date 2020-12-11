@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
-const reviews = document.querySelector('.reviews');
-const items = reviews.querySelectorAll('.reviews__item');
-const togglePrev = reviews.querySelector('.reviews__toggle--previous');
-const toggleNext = reviews.querySelector('.reviews__toggle--next');
+const reviews = document.querySelector(".reviews");
+const items = reviews.querySelectorAll(".reviews__item");
+const togglePrev = reviews.querySelector(".reviews__toggle--previous");
+const toggleNext = reviews.querySelector(".reviews__toggle--next");
 
 let counter = 0;
 
-toggleNext.addEventListener('click', (evt) => {
+toggleNext.addEventListener("click", (evt) => {
   evt.preventDefault();
     counter++;
 
@@ -16,16 +16,16 @@ toggleNext.addEventListener('click', (evt) => {
     }
 
   items.forEach(item => {
-    item.classList.remove('reviews__item--active');
+    item.classList.remove("reviews__item--active");
   });
-  items[counter].classList.add('reviews__item--active');
+  items[counter].classList.add("reviews__item--active");
 
   if (counter === items.length) {
     counter = 0;
   }
 });
 
-togglePrev.addEventListener('click', (evt) => {
+togglePrev.addEventListener("click", (evt) => {
   evt.preventDefault();
     counter--;
 
@@ -34,9 +34,9 @@ togglePrev.addEventListener('click', (evt) => {
     }
 
   items.forEach(item => {
-    item.classList.remove('reviews__item--active');
+    item.classList.remove("reviews__item--active");
   });
-  items[counter].classList.add('reviews__item--active');
+  items[counter].classList.add("reviews__item--active");
 
   if (counter < 0) {
     counter = items.length - 1;
