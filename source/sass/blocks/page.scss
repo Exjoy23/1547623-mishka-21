@@ -5,4 +5,9 @@
   font-weight: 400;
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   color: $primary-color;
+
+  &--modal {
+    padding-right: 17px;
+    overflow-y: hidden;
+  }
 }
