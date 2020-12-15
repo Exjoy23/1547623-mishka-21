@@ -125,11 +125,16 @@
   color: $secondary-color;
 
   @media (min-width: $tablet-width) {
+    max-height: 140px;
+    overflow: auto;
+
     font-size: 15px;
   }
 
   @media (min-width: $desktop-width) {
+    max-height: 45px;
     margin-bottom: 0;
+    overflow: auto;
   }
 }
 
