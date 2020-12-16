@@ -1,6 +1,6 @@
 "use strict";
 
-const body = document.querySelector('.page__body');
+const body = document.querySelector(".page__body");
 const buttonOpenModal = document.querySelectorAll(".open-modal");
 const modal = document.querySelector(".modal");
 const buttonAdd = modal.querySelector(".modal__button");
@@ -26,7 +26,6 @@ buttonOpenModal.forEach(item => {
 });
 
 buttonAdd.addEventListener("click", (evt) => {
-  evt.preventDefault();
   closeModal();
 });
 

@@ -270,6 +270,10 @@
   }
 }
 
+.form__input-radio:disabled + .form__text-radio {
+  opacity: 0.5;
+}
+
 .form__input-radio:focus + .form__text-radio::before {
   border-color: $radio-color;
 }
@@ -323,6 +327,10 @@
     background-image: url("../img/tick-big.svg");
     background-position: 54% 54%;
   }
+}
+
+.form__input-checkbox:disabled + .form__text-checkbox {
+  opacity: 0.5;
 }
 
 .form__input-checkbox:focus + .form__text-checkbox::before {

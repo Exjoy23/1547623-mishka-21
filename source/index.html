@@ -303,23 +303,25 @@
   <!--MODAL-->
   <section class="modal modal--background">
     <div class="modal__wrapper">
-      <p class="modal__title">Добавить в&nbsp;корзину</p>
+      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
       <p class="modal__subtitle">Выберите размер:</p>
-      <div class="modal__inner">
-        <label class="modal__label">
-          <input class="modal__radio visually-hidden" type="radio" name="size" value="s">
-          <span class="modal__text">s</span>
-        </label>
-        <label class="modal__label">
-          <input class="modal__radio visually-hidden" type="radio" name="size" value="m">
-          <span class="modal__text">m</span>
-        </label>
-        <label class="modal__label">
-          <input class="modal__radio visually-hidden" type="radio" name="size" value="l">
-          <span class="modal__text">l</span>
-        </label>
-      </div>
-      <button class="modal__button button" type="button">Добавить</button>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="GET">
+        <div class="modal__inner">
+          <label class="modal__label">
+            <input class="modal__radio visually-hidden" type="radio" name="size" value="s">
+            <span class="modal__text">s</span>
+          </label>
+          <label class="modal__label">
+            <input class="modal__radio visually-hidden" type="radio" name="size" value="m">
+            <span class="modal__text">m</span>
+          </label>
+          <label class="modal__label">
+            <input class="modal__radio visually-hidden" type="radio" name="size" value="l">
+            <span class="modal__text">l</span>
+          </label>
+        </div>
+        <button class="modal__button button" type="submit">Добавить</button>
+      </form>
     </div>
   </section>
 
